@@ -1,0 +1,19 @@
+[package]
+name = "rust-unicorn"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A Rust application that downloads the latest Joplin release"
+
+[dependencies]
+# Asynchronous HTTP client with JSON support
+reqwest = { version = "0.12", features = ["json", "stream"] }
+# Tokio runtime for async/await
+tokio = { version = "1", features = ["full"] }
+# JSON serialization/deserialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Progress bar
+indicatif = "0.17.8"
+# Stream utilities
+futures-util = "0.3.30"
